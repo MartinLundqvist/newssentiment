@@ -1,0 +1,37 @@
+GET http://localhost:5002/sentiment
+Content-Type: application/json
+
+{
+    "sentences": ["I am not OK","This is a cool sentence", "This is a neutral sentence", "This is a positive sentence", "God knows about this one...", "Oh I am so happy", "That was a fine coat", "Really bad weather"]
+}
+
+###
+
+GET http://localhost:5002/sentiment
+Content-Type: application/json
+
+{
+    "sentences": ["This is a cool sentence"]
+}
+
+###
+
+GET https://news-scraper-sentiment.fly.dev/sentiment
+Content-Type: application/json
+
+{
+    "sentences": ["I am not OK","This is a cool sentence", "This is a neutral sentence", "This is a positive sentence", "God knows about this one...", "Oh I am so happy", "That was a fine coat", "Really bad weather"]
+}
+
+###
+
+GET https://news-scraper-sentiment.fly.dev/healthz
+
+###
+
+GET http://localhost:8080/tests
+Content-Type: application/json
+
+{
+    "sentences": ["I am not OK","This is a cool sentence", "This is a neutral sentence", "This is a positive sentence", "God knows about this one...", "Oh I am so happy", "That was a fine coat", "Really bad weather"]
+}
